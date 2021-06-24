@@ -26,6 +26,10 @@ export default class App extends React.Component {
     this.setState({selectedVideo: video})
   }
 
+  componentDidMount() {
+    this.onTermSubmit('cat')
+  }
+
   render() {
     return (
       <div className="ui container">
